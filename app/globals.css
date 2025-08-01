@@ -1,9 +1,21 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+
+/*  */
 .container{
     max-width:1320px;
     width: 100%;
     margin:0 auto;
+
+}
+/* background-image add */
+.bg-img{
+    background-image:url('https://i.ibb.co/zWhkHZ93/hero-img-1.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
     
+
+
 }
