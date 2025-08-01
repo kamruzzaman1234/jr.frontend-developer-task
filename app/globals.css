@@ -9,13 +9,20 @@
     margin:0 auto;
 
 }
-/* background-image add */
+/* background-image add Banner section */
 .bg-img{
     background-image:url('https://i.ibb.co/zWhkHZ93/hero-img-1.png');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
     
+}
 
-
+/* Our Story section bg-img add */
+.bg-story-img{
+    background-image:url('https://i.ibb.co/LDHNnJZZ/all-story-bg.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    
 }
