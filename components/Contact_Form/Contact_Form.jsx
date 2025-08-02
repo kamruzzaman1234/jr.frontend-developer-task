@@ -46,7 +46,7 @@ const Contact_form = () => {
     };
 
     try {
-      const res = await fetch("https://consultationform-api.vercel.app/api/form/submit", {
+      const res = await fetch("https://sumdimsumapi.scaleupads.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -57,14 +57,14 @@ const Contact_form = () => {
       const result = await res.json();
 
       if (result.success) {
-        Swal.fire("✅ Success", "Message sent successfully!", "success");
+        Swal.fire(" Success", "Message sent successfully!", "success");
         setFormData({ name: "", email: "", phone1: "", phone2: "" });
       } else {
-        Swal.fire("❌ Failed", "Something went wrong!", "error");
+        Swal.fire(" Failed", "Something went wrong!", "error");
       }
     } catch (error) {
       console.error("API error:", error);
-      Swal.fire("⚠️ Error", "Network problem or invalid response.", "error");
+      Swal.fire(" Error", "Network problem or invalid response.", "error");
     }
   };
 

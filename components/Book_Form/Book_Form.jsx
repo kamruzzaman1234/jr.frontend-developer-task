@@ -36,7 +36,7 @@ const Book_Form = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("https://your-api-url.com/api/bookings", {
+      const res = await fetch("https://sumdimsumapi.scaleupads.com/api/booking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

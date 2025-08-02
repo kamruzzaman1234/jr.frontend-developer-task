@@ -23,7 +23,7 @@ const Navbar = ()=>{
                 <div className="flex flex-col md:flex-row lg:flex-row
                 md:justify-between items-center gap-[16px] lg:gap-[0px] md:gap-[0px]
                  lg:justify-between">
-                    <div className="flex gap-[10px] lg:gap-[40px]">
+                    <div className="flex gap-[20px] lg:gap-[40px]">
                         <div className="flex  lg:flex-row gap-[4px] items-center justify-center">
                             <div className="w-[17px] h-[17px] md:w-[20px] md:h-[20px] lg:w-[20px] lg:h-[20px]">
                                 <img src="https://i.ibb.co/gFSBNc2x/Frame.png"

@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { Cinzel_Decorative, Raleway } from "next/font/google"
 import Link from "next/link"
 
