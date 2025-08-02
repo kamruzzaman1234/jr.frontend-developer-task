@@ -47,17 +47,17 @@ const Test_Traditional = () => {
                 alt="Featured Dish"
               />
 
-              <div className="absolute bottom-0 left-0 right-0
+              <div className="absolute bottom-0 left-0 right-0 
                bg-gradient-to-t from-black/80 via-black/40 to-transparent
                 backdrop-blur-sm p-5 flex justify-between items-center gap-4">
-                <div className="flex flex-col gap-3 max-w-[438px]">
+                <div className="flex flex-col gap-3  max-w-[438px]">
                   <h5
-                    className={`${raleway.className} text-[18px] font-semibold text-white`}
+                    className={`${raleway.className} hidden lg:block text-[18px] font-semibold text-white`}
                   >
                     Wolfberry with Mushroom Siew Mai 枸杞子烧卖
                   </h5>
                   <p
-                    className={`${raleway.className} text-[16px] font-normal text-white`}
+                    className={`${raleway.className} text-[16px] hidden lg:block font-normal text-white`}
                   >
                     A traditional dim sum favorite featuring steamed dumplings
                     filled with succulent pork, mushrooms, and topped with

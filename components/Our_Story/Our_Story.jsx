@@ -20,14 +20,16 @@ const Our_Story = ()=>{
         <div className="container px-[16px] lg:px-[0px]">
             <div>
                 <div className="relative flex flex-col lg:flex-row items-start">
-                <div className="w-full lg:w-[1096px] mb-[60px] bg-[#F7E7E8] rounded-lg">
+                <div className="w-full lg:w-[1096px] mb-[60px]
+                  bg-[#F7E7E8] rounded-2xl bg-[url('https://i.ibb.co/35982D5g/single-tree.png')]
+                  bg-contain bg-no-repeat bg-center">
                     <div className="flex px-[20px] md:px-[40px] lg:px-[60px] py-[40px] md:py-[50px] lg:py-[60px] flex-col gap-[30px] md:gap-[40px]">
                         <div className="flex flex-col gap-[20px]">
                             <div className="w-full">
                              <h2 className={`${cinzel_decorative.className} 
                              text-3xl md:text-4xl lg:text-5xl font-bold leading-[136%]`}>Our Story</h2>
                             </div>
-                            <div className="w-full">
+                            <div className="w-full lg:w-[664px]">
                                 <p className={`${raleway.className} 
                                  text-[14px] md:text-[15px] lg:text-[16px] font-normal leading-[150%]`}>At Sum Dim Sum, we are a local Singaporean brand that prepares dim sum dishes
                                      with wholehearted dedication and passion. Our chefs use traditional techniques 

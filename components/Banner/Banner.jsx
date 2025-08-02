@@ -84,13 +84,13 @@ const Banner = () => {
           </div>
         </div>
 {/* Hero Banner Area */}
-     <div className="py-[180px] md:py-[220px] lg:py-[236px] ">
+     <div className="py-[130px] md:py-[180px] lg:py-[236px] ">
              <div className="container px-[30px] lg:px-[0]">
         <div className="flex flex-col">
           <div className="flex flex-col gap-[20px]">
             <div className="max-w-[1320px] w-full mx-auto">
               <h1
-                className={`${cinzel_decorative.className} font-bold text-6xl 
+                className={`${cinzel_decorative.className} font-bold text-4xl lg:text-6xl 
                 text-center leading-[136%] text-white`}
               >
                 Welcome to Sum Dim Sum – Where Every Bite Tells a Story

@@ -23,9 +23,9 @@ const raleway = Raleway({
 const Footer = ()=>{
     return(
         <section className="pt-[60px] pb-[30px]">
-            <div className="container">
+            <div className="container px-[30px] lg:px-[0px]">
                 <div className="border-t-1 border-b-1 border-[#B31217]">
-                    <div className="flex justify-between py-[60px]">
+                    <div className="flex flex-col lg:flex-row justify-between py-[60px]">
                         <div className="flex flex-col gap-[30px]">   
                             <h3 className={`${cinzel_decorative.className} text-[24px] 
                             font-bold leading-[50%]`}>Contact</h3>

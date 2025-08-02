@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Cinzel_Decorative, Raleway, Poppins } from "next/font/google";
+import Swal from "sweetalert2"; // ✅ for alert
 
 const cinzel_decorative = Cinzel_Decorative({
   subsets: ["latin"],
@@ -36,26 +37,34 @@ const Contact_form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Convert formData to match API format
+    const apiPayload = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone1,
+      message: formData.phone2,
+    };
+
     try {
-      const res = await fetch("https://contactformapi.com/send", { // 
+      const res = await fetch("https://consultationform-api.vercel.app/api/form/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(apiPayload),
       });
 
       const result = await res.json();
 
-      if (res.ok) {
-        alert("Message sent successfully!");
+      if (result.success) {
+        Swal.fire("✅ Success", "Message sent successfully!", "success");
         setFormData({ name: "", email: "", phone1: "", phone2: "" });
       } else {
-        alert("Something went wrong!");
+        Swal.fire("❌ Failed", "Something went wrong!", "error");
       }
     } catch (error) {
       console.error("API error:", error);
-      alert("Network error!");
+      Swal.fire("⚠️ Error", "Network problem or invalid response.", "error");
     }
   };
 
@@ -65,7 +74,7 @@ const Contact_form = () => {
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-[826px] h-[746px] contact-bg">
             <div className="bg-overly">
-              <div className="px-[60px] py-[120px]">
+              <div className="px-[20px] lg:px-[60px] py-[60px] lg:py-[120px]">
                 <div className="flex flex-col gap-[60px]">
                   <div className="relative z-60">
                     <h4 className={`${raleway.className} text-[24px] text-white font-semibold`}>
@@ -89,7 +98,7 @@ const Contact_form = () => {
                             required
                           />
                         </div>
-                        <div className="flex flex-col">
+                        <div className="flex flex-col col-span-2 lg:col-span-1">
                           <label className="text-white">Email</label>
                           <input
                             type="email"
@@ -100,7 +109,7 @@ const Contact_form = () => {
                             required
                           />
                         </div>
-                        <div className="flex flex-col">
+                        <div className="flex flex-col col-span-2 lg:col-span-1">
                           <label className="text-white">Phone Number</label>
                           <input
                             type="tel"
@@ -121,11 +130,12 @@ const Contact_form = () => {
                           />
                         </div>
                         <div className="flex justify-end col-span-2 relative">
-                          <button type="submit" className="bg-[#B31217] text-white pl-[49.5px] 
-                          cursor-pointer pr-[56px] py-[11.5px] rounded-2xl relative z-50">
+                          <button type="submit" className={`${raleway.className} bg-[#B31217] text-white pl-[49.5px] 
+                          cursor-pointer pr-[60px] py-[11.5px] rounded-[8px] relative z-50 text-[18px] leading-[150%]
+                          font-semibold`}>
                             Send
                           </button>
-                          <div className="w-[18px] h-[7.5px] absolute z-50 right-[20px] top-[22px]">
+                          <div className="w-[18px] h-[7.5px] absolute z-50 right-[25px] top-[22px]">
                             <img
                               src="https://i.ibb.co/39fLGPJY/Vector-1.png"
                               className="w-full h-full"
