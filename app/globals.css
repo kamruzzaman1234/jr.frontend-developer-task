@@ -18,11 +18,40 @@
     
 }
 
-/* Our Story section bg-img add */
-.bg-story-img{
-    background-image:url('https://i.ibb.co/LDHNnJZZ/all-story-bg.png');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center center;
-    
+/* driven area */
+.back-img {
+  position: relative;
+  background-image: url('https://i.postimg.cc/2yqPLgKh/bdddd.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.back-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85),
+   rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  z-index: 2;
+  pointer-events: none;
+}
+
+.background-img {
+  background-image: url('https://i.ibb.co/NgMgh189/bdddd.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative; /* Necessary for ::before to position absolutely inside */
+  z-index: 1;
+}
+
+.background-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+  z-index: 2;
+  pointer-events: none;
 }

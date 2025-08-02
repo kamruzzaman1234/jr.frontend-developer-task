@@ -16,11 +16,11 @@ const raleway = Raleway({
 
 const Our_Story = ()=>{
     return(
-     <section className="py-[120px]">
+     <section className="py-[60px]">
         <div className="container px-[30px] lg:px-[0px]">
             <div>
                 <div className="relative">
-                <div className="w-[1096px] mb-[80px] bg-[#F7E7E8] rounded-lg">
+                <div className="w-[1096px] mb-[60px] bg-[#F7E7E8] rounded-lg">
                     <div className="flex px-[60px] py-[60px] flex-col gap-[40px]">
                         <div className="flex flex-col gap-[20px]">
                             <div className="max-w-[664px] w-full">
