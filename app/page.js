@@ -5,6 +5,7 @@ import Our_Story from "@/components/Our_Story/Our_Story";
 import Test_Traditional from "@/components/Test_Traditional/Test_Traditional";
 import Drive_Intro from "@/components/Drive_Intro/Drive_Intro";
 import Our_Testimonial from "@/components/Our_Testimonial/Our_Testimonial";
+import Book_Form from "@/components/Book_Form/Book_Form";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           <Test_Traditional></Test_Traditional>
           <Drive_Intro></Drive_Intro>
           <Our_Testimonial></Our_Testimonial>
+          <Book_Form></Book_Form>
       </main>
       
     </div>
