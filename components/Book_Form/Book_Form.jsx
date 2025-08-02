@@ -17,7 +17,7 @@ const raleway = Raleway({
 const Book_Form = () => {
   return (
     <section className="py-[60px]">
-      <div className="container">
+      <div className="container px-[30px] lg:px-[0px]">
         <div className="flex flex-col  md:flex-row lg:flex-row justify-between gap-[60px]">
           {/* Left Image Section */}
           <div className="relative">
@@ -32,7 +32,7 @@ const Book_Form = () => {
           </div>
 
           {/* Right Text & Form Section */}
-         <div className="w-[700px]">
+         <div className="w-full lg:w-[700px]">
              <div className="flex flex-col gap-[60px]">
             {/* Title & Description */}
             <div className="flex flex-col gap-[20px]">

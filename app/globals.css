@@ -45,6 +45,7 @@
   background-position: center center;
   position: relative; /* Necessary for ::before to position absolutely inside */
   z-index: 1;
+  width:100%;
 }
 
 .background-img::before {

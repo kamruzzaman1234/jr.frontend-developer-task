@@ -99,7 +99,7 @@ const Test_Traditional = () => {
                 className="w-full h-full object-cover"
                 alt="Featured Dish"
               />
-
+{/* 
               <div className="absolute bottom-0 left-0 right-0
                bg-gradient-to-t from-black/80 via-black/40 to-transparent
                 backdrop-blur-sm p-5 flex justify-between items-center gap-4">
@@ -126,7 +126,7 @@ const Test_Traditional = () => {
                                className="w-full h-full" alt="Image"/>
                             </div>
                           </button>
-              </div>
+              </div> */}
             </div>
 
           </div>

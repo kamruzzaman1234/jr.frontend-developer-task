@@ -20,9 +20,10 @@ const Drive_Intro = ()=>{
             <div className="container px-[30px] lg:px-[0px]">
                 <div className="max-w-[994px] w-full mx-auto">
                     <div className="flex flex-col gap-[60px]">
-                        <div className="flex flex-col gap-[20px] justify-center w-[994px] relative z-50">
+                        <div className="flex flex-col gap-[20px] justify-center w-full lg:w-[994px]
+                         relative z-50">
                             <h2 className={`${cinzel_decorative.className}
-                            text-[48px] leading-[130%] text-center
+                            text-[38px] lg:text-[48px] leading-[130%] text-center
                              text-white font-bold`}>Dive Into the World of Sumptuous
                               Sum Dim Sum</h2>
                               <p className={`${raleway.className} text-[16px] 

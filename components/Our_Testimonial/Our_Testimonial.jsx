@@ -23,7 +23,7 @@ const Our_Testimonial = () => {
           <div className="max-w-[583px] w-full mx-auto">
             <div className="flex flex-col items-center text-center">
               <h2
-                className={`${cinzel_decorative.className} text-[48px] font-bold text-black leading-[136%]`}
+                className={`${cinzel_decorative.className} text-[38px] lg:text-[48px] font-bold text-black leading-[136%]`}
               >
                 The Talk of the Town
               </h2>
@@ -41,7 +41,7 @@ const Our_Testimonial = () => {
           
         </div>
       </div>
-      <div className="mt-[60px]">
+      <div className="mt-[60px] w-full">
             <div className="carousel w-full rounded-lg overflow-hidden">
               {/* Slide 1 */}
               <div id="slide1" className="carousel-item relative
@@ -51,9 +51,9 @@ const Our_Testimonial = () => {
                   className="w-full object-cover"
                   alt="Slide 1"
                 /> */}
-               <div className="container">
+               <div className="container px-[30px] lg:px-[0px]">
                    <div className="max-w-[994px] w-full mx-auto">
-                  <div className="relative z-50 w-[994px] py-[60px]">
+                  <div className="relative z-50 w-full lg:w-[994px] py-[60px]">
                     <div className="flex flex-col gap-[40px] items-center">
                       <div className="w-[100px] h-[100px]">
                           <img src="https://i.ibb.co/fdLPLBT5/Ellipse-83.png"
@@ -109,9 +109,9 @@ const Our_Testimonial = () => {
                   className="w-full object-cover"
                   alt="Slide 2"
                 /> */}
-                <div className="container">
+                <div className="container px-[30px] lg:px-[0px]">
                    <div className="max-w-[994px] w-full mx-auto">
-                  <div className="relative z-50 w-[994px] py-[60px]">
+                  <div className="relative z-50 w-full lg:w-[994px] py-[60px]">
                     <div className="flex flex-col gap-[40px] items-center">
                       <div className="w-[100px] h-[100px]">
                           <img src="https://i.ibb.co/fdLPLBT5/Ellipse-83.png"
@@ -166,9 +166,9 @@ const Our_Testimonial = () => {
                   className="w-full object-cover"
                   alt="Slide 3"
                 /> */}
-                <div className="container">
+                <div className="container px-[30px] lg:px-[0px]">
                    <div className="max-w-[994px] w-full mx-auto">
-                  <div className="relative z-50 w-[994px] py-[60px]">
+                  <div className="relative z-50 w-full lg:w-[994px] py-[60px]">
                     <div className="flex flex-col gap-[40px] items-center">
                       <div className="w-[100px] h-[100px]">
                           <img src="https://i.ibb.co/fdLPLBT5/Ellipse-83.png"
@@ -224,9 +224,9 @@ const Our_Testimonial = () => {
                   alt="Slide 4"
                 /> */}
 
-                <div className="container">
+                <div className="container px-[30px] lg:px-[30px]">
                    <div className="max-w-[994px] w-full mx-auto">
-                  <div className="relative z-50 w-[994px] py-[60px]">
+                  <div className="relative z-50 w-full lg:w-[994px] py-[60px]">
                     <div className="flex flex-col gap-[40px] items-center">
                       <div className="w-[100px] h-[100px]">
                           <img src="https://i.ibb.co/fdLPLBT5/Ellipse-83.png"
@@ -275,7 +275,7 @@ const Our_Testimonial = () => {
               </div>
             </div>
         </div>
-        <div className="absolute w-[336px] bottom-30 z-60  right-20">
+        <div className="absolute w-[200px] lg:w-[336px] bottom-30 z-60  right-10">
           <img src="https://i.ibb.co/HDzPzkK8/name-frame.png" 
            className="w-full h-full" alt="" />
         </div>
